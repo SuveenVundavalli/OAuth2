@@ -1,4 +1,4 @@
-package com.sinch.ws.api.photoresourceserver.security;
+package com.sinch.ws.api.albumresourceserver.security.security;
 
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
@@ -17,7 +17,7 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
     jwtAuthenticationConverter.setJwtGrantedAuthoritiesConverter(new KeycloakRoleConverter());
 
     http.authorizeRequests()
-        .antMatchers(HttpMethod.GET, "/users/status/check")
+        .antMatchers(HttpMethod.GET, "/albums")
         .hasRole("developer")
         .anyRequest()
         .authenticated()

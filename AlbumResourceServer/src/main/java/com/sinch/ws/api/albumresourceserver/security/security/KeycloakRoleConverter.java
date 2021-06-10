@@ -1,4 +1,4 @@
-package com.sinch.ws.api.photoresourceserver.security;
+package com.sinch.ws.api.albumresourceserver.security.security;
 
 import java.util.ArrayList;
 import java.util.Collection;
